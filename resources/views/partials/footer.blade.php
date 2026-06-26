@@ -12,18 +12,7 @@
     <div class="footer-grid">
       <div>
         <div class="footer-logo">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;margin-right:6px;" aria-hidden="true">
-            <circle cx="12" cy="12" r="4.5" fill="currentColor"/>
-            <line x1="12" y1="2" x2="12" y2="4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <line x1="12" y1="19.5" x2="12" y2="22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <line x1="2" y1="12" x2="4.5" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <line x1="19.5" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <line x1="4.93" y1="4.93" x2="6.64" y2="6.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <line x1="17.36" y1="17.36" x2="19.07" y2="19.07" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <line x1="19.07" y1="4.93" x2="17.36" y2="6.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <line x1="6.64" y1="17.36" x2="4.93" y2="19.07" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-          Amar Rent Car
+          <img src="{{ asset('logo.png') }}" alt="Amar Rent Car" width="auto" height="50" style="object-fit: contain">
         </div>
         <p class="footer-tagline">{{ __('site.tagline') }}</p>
         <a href="https://wa.me/{{ $whatsapp }}" class="btn btn-outline-light" style="font-size:0.85rem; padding:10px 20px;"><i class="ti ti-brand-whatsapp"></i> WhatsApp</a>

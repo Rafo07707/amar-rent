@@ -1,20 +1,7 @@
 <header class="site-header">
   <div class="nav-wrap">
     <a href="{{ route('home', ['locale' => app()->getLocale()]) }}" class="logo">
-      <span class="mark">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <circle cx="12" cy="12" r="4.5" fill="currentColor"/>
-          <line x1="12" y1="2" x2="12" y2="4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <line x1="12" y1="19.5" x2="12" y2="22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <line x1="2" y1="12" x2="4.5" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <line x1="19.5" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <line x1="4.93" y1="4.93" x2="6.64" y2="6.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <line x1="17.36" y1="17.36" x2="19.07" y2="19.07" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <line x1="19.07" y1="4.93" x2="17.36" y2="6.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <line x1="6.64" y1="17.36" x2="4.93" y2="19.07" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-      </span>
-      Amar Rent Car
+      <img src="{{ asset('logo.png') }}" alt="Amar Rent Car" class="logo-img" width="auto" height="50" style="object-fit: contain">
     </a>
     <nav class="main-nav" id="mainNav">
       <a href="{{ route('home', ['locale' => app()->getLocale()]) }}" class="{{ request()->routeIs('home') ? 'active' : '' }}">{{ __('site.nav_home') }}</a>
